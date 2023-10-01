@@ -1,0 +1,143 @@
+@font-face {
+  font-family: SF;
+  src: url(assets/SFPRODISPLAYMEDIUM.OTF);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: SF, sans-serif;
+}
+
+.logo {
+  position: fixed;
+  float: left;
+  margin: 16px 36px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10001;
+}
+
+nav ul {
+  list-style: none;
+  background: #1363df;
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #1363df;
+}
+
+nav.black .logo {
+  color: #fff;
+}
+
+nav.black ul li a {
+  color: #fff;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  border-radius: 5px;
+  text-decoration: none;
+  color: #1363df;
+  background: white;
+}
+
+nav.black ul li a:hover {
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background: #06283d;
+}
+
+.active {
+  color: #1363df;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.menu-icon {
+  width: 100%;
+  background: #1363df;
+  text-align: right;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.content-1 {
+  height: 80vh;
+  position: relative;
+  padding-top: 150px;
+  margin: 0px 50px 0px 50px;
+}
+
+.isi-table p {
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  nav ul {
+    max-height: 5px;
+    background: #1363df;
+  }
+
+  nav.black {
+    background: #1363df;
+    z-index: 1000;
+  }
+
+  .showing {
+    max-height: 30em;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+}

@@ -1,0 +1,265 @@
+@font-face {
+  font-family: SF;
+  src: url(assets/SFPRODISPLAYMEDIUM.OTF);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: SF, sans-serif;
+}
+
+.logo {
+  position: fixed;
+  float: left;
+  margin: 16px 36px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10001;
+}
+
+nav ul {
+  list-style: none;
+  background: #1363df;
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #1363df;
+}
+
+nav.black .logo {
+  color: #fff;
+}
+
+nav.black ul li a {
+  color: #fff;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  border-radius: 5px;
+  text-decoration: none;
+  color: #1363df;
+  background: white;
+}
+
+nav.black ul li a:hover {
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background: #06283d;
+}
+
+.active {
+  background-color: white;
+  color: #1363df;
+  border-radius: 5px;
+}
+
+.menu-icon {
+  width: 100%;
+  background: #1363df;
+  text-align: right;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.card {
+  position: absolute;
+  font-size: 18px;
+  width: 70%;
+}
+
+a .nav-link {
+  color: gray;
+  font-size: 18px;
+  padding: 0;
+}
+
+.container {
+  padding-top: 150px;
+}
+
+.bubbleWrapper {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-self: flex-end;
+  color: #fff;
+}
+
+.inlineContainer {
+  display: inline-flex;
+}
+
+.inlineContainer.own {
+  flex-direction: row-reverse;
+}
+
+.inlineIcon {
+  width: 20px;
+  object-fit: contain;
+}
+
+.ownBubble {
+  min-width: 60px;
+  max-width: 700px;
+  padding: 14px 18px;
+  margin: 6px 8px;
+  background-color: #1363df;
+  border-radius: 16px 16px 0 16px;
+}
+
+.otherBubble {
+  min-width: 60px;
+  max-width: 700px;
+  padding: 14px 18px;
+  margin: 6px 8px;
+  background-color: #47b5ff;
+  border-radius: 16px 16px 16px 0;
+}
+
+.own {
+  align-self: flex-end;
+}
+
+.other {
+  align-self: flex-start;
+}
+
+.input {
+  width: 1250px;
+  border: none;
+  border-radius: 20px;
+  background: #e3e3e3;
+  font-size: 12px;
+  height: 35px;
+  padding-left: 15px;
+}
+
+span.own,
+span.other {
+  font-size: 14px;
+  color: grey;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  padding: 2px;
+}
+
+@media (max-width: 1040px) {
+  .judul {
+    font-size: 50px;
+  }
+
+  .isi {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-1 h2 {
+    font-size: 20px;
+  }
+
+  .content-1 h4 {
+    font-size: 16px;
+    text-decoration: underline;
+  }
+
+  .content-1 h6 {
+    font-size: 10px;
+  }
+
+  .content-1 {
+    height: 1500px;
+  }
+
+  .content-2 {
+    height: 1400px;
+  }
+
+  .judul {
+    font-size: 30px;
+  }
+
+  .isi {
+    font-size: 14px;
+  }
+
+  .col-md-4 {
+    border-bottom: 3px black;
+  }
+}
+
+@media (max-width: 580px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  nav ul {
+    max-height: 5px;
+    background: #1363df;
+  }
+
+  nav.black {
+    background: #1363df;
+    z-index: 1000;
+  }
+
+  .showing {
+    max-height: 30em;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+}

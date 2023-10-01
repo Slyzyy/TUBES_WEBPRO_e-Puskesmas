@@ -1,0 +1,289 @@
+@font-face {
+  font-family: SF;
+  src: url(../other/SFPRODISPLAYMEDIUM.OTF);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: SF, sans-serif;
+}
+
+.home {
+  max-width: 100%;
+  height: 100vh;
+  background: url(../other/blur-hospital.gif);
+  background-size: auto;
+}
+
+.title-content {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.judul {
+  font-size: 80px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.isi {
+  font-size: 20px;
+}
+
+.logo {
+  position: fixed;
+  float: left;
+  margin: 16px 36px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10001;
+}
+
+nav ul {
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #1363df;
+}
+
+nav.black .logo {
+  color: #fff;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  background: #1363df;
+}
+
+nav.black ul li a:hover {
+  border-radius: 5px;
+  text-decoration: none;
+  color: #1363df;
+  background: white;
+}
+
+.active {
+  border-radius: 5px;
+  background-color: white;
+  color: #1363df;
+}
+
+.menu-icon {
+  width: 100%;
+  background: #1363df;
+  text-align: right;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.content-1 {
+  width: 100%;
+  margin: 4em auto;
+  font-size: 20px;
+  text-align: justify;
+  height: 80vh;
+}
+
+.content-2 {
+  width: 100%;
+  margin: 4em auto;
+  font-size: 20px;
+  text-align: justify;
+  height: 100vh;
+  padding-top: 100px;
+  margin-top: 100px;
+  margin-bottom: 250px;
+}
+
+.img {
+  width: 400px;
+  border-radius: 15px;
+}
+
+.img-1 {
+  float: right;
+  width: 139px;
+}
+
+.img-2 {
+  width: 250px;
+}
+
+.content h2 {
+  font-style: bold;
+}
+
+/* Footer */
+
+footer {
+  box-sizing: border-box;
+  background: #1363df;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  text-align: center;
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  background: #1363df;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+@media (max-width: 1040px) {
+  .judul {
+    font-size: 50px;
+  }
+
+  .isi {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-1 h2 {
+    font-size: 20px;
+  }
+
+  .content-1 h4 {
+    font-size: 16px;
+    text-decoration: underline;
+  }
+
+  .content-1 h6 {
+    font-size: 10px;
+  }
+
+  .content-1 {
+    height: 1500px;
+  }
+
+  .content-2 {
+    height: 1400px;
+  }
+
+  .judul {
+    font-size: 30px;
+  }
+
+  .isi {
+    font-size: 14px;
+  }
+
+  .col-md-4 {
+    border-bottom: 3px black;
+  }
+}
+
+@media (max-width: 580px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  nav ul {
+    max-height: 0px;
+    background: #1363df;
+  }
+
+  nav.black {
+    background: #1363df;
+    z-index: 1000;
+  }
+
+  .showing {
+    max-height: 30em;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+}
